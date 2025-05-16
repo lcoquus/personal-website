@@ -1,8 +1,10 @@
 # Introduction: What is Electricity?
 
-Saturday morning. I'm sitting opposite a friend at a trendy inner city cafe. A napkin littered with esoteric diagrams and equations lies in front of me. He's almost finished his pancakes, but I've barely touched my hot breakfast. Is this the start of a revolutionary business enterpise? No. It's a futile attempt to answer the question, *what is electricity?*. The issue is by no means my friend. He's an intelligent university student majoring in biology. I'm in my final year of an electrical engineering degree, so in theory I understand what's going on. In theory. The issue lies with electricity.
+Saturday morning. I'm sitting opposite a friend at a trendy inner city cafe. A napkin littered with esoteric diagrams and equations lies in front of me. He's almost finished his pancakes, but I've barely touched my hot breakfast. Is this the start of a revolutionary business enterpise? No. It's my futile attempt to answer the question, *what is electricity?*. The issue is by no means my friend. He's an intelligent university student majoring in biology. I'm in my final year of an electrical engineering degree, so in theory I understand what's going on. In theory. The issue lies with electricity.
 
 ## The Problem with Definitions
+
+*Electricity* is one of those generic words which is so vaguely and inconsistently defined as to be unhelpful in any discussions of the thing itself. Is it the movement of electrons through a conductor? Well, yes, but there's more to it than that. Is it the same as lightning? Kind of, but not necessarily. What about electromagnetic radiation? Or static electricity? What are those, and how are they connected? These, and many more questions, quickly confuse and obfuscate any attempt to produce a concise definition. Therefore, my aim in this book is not so much to define what electricity is as *what it does*. What are the fundamental properties of electricity? How does it behave in different conditions? How can we use it effectively? By answering these queries, I hope that you will come to understand and appreciate electricity even more.
 
 ## Four Keys to Understanding Electricity
 
@@ -34,4 +36,16 @@ You are familiar with the concept of modelling, even if you don't realise it. A 
 
 ### 4. Analogy
 
+The final concept to keep in mind throughout this book is analogy. An analogy seeks to explain something by comparing it to something else. This is especially helpful in studying electricity because electricity is usually invisible, and invisible things are difficult to visualise. Like models, analogies are imperfect representations of their subject. However, they differ from models in that they emphasise concepts, rather than properties.
+
+A common analogy used in explanations about electric circuits is known as the water analogy. I will outline it more thoroughly in the next chapter, but in brief, it compares electricity in a circuit to the flow of water through pipes, connecting voltage, current, and resistance to the behaviour of the water and the characteristics of the pipes. There are no scale models or lengthy equations in the analogy, simply a picture to imagine which assists in understanding the reality. Analogies on their own are insufficient, since they lack the rigour of a good mathematical model. Nevertheless, at times when our minds struggle to comprehend, a good analogy can save us.
+
 ## How to Read This Book
+
+I have structured this book to approximate the progression of a typical electrical engineering degree. We will begin with simple electric circuits, since they are both the easiest to understand and the most fundamental in understanding electricity as a whole. From there, we will delve into some of the underlying physics which enables electric circuits to function, culminating in Maxwell's equations of electromagnetism. Having considered the theory behind electricity, we will then turn to some typical applications, in two broad categories: using electricity to carry energy, and using electricity to transmit information.
+
+There are two particular features of each chapter which I will point out before we begin. The first is the *In Real Life* section. One frustration of learning about electricity in depth is that it can feel far removed from the ways in which we experience elecricity on a daily basis. This section will consider a real-world example relevant to the content of the chapter. I want you to feel the satisfaction of realising that you now know a bit more about how things work.
+
+The second feature is the *Mathematics Corner*. While I provided the mathematical assumed knowledge earlier in this introduction, I also want to cater to those who have a more thorough mathematical background. I find the mathematics involved in electrical engineering to be clever and beautiful, albeit unfamiliar and challenging when you first encounter it. So, if you are comfortable with university-level mathematics, particularly linear algebra, complex analysis, and vector calculus, please enjoy these additions for enhancing your understanding. If you have no knowledge of these topics, you are also more than welcome, but do not fear, I have designed the *Mathematics Corner* to be skippable without any serious loss to the flow of the book.
+
+With the preliminaries now out of the way, let us dive in to the essentials of an electric circuit.
