@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduction: What is Electricity? &#8212; V Equals I R</title>
+    <title>Chapter 16: Digital Modulation &#8212; V Equals I R</title>
   
   
   
@@ -57,13 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'introduction';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapter16';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Chapter 1: Ohm’s Law and Electric Circuits" href="chapter1.html" />
-    <link rel="prev" title="Welcome" href="welcome.html" />
+    <link rel="next" title="Conclusion: What is Electricity?" href="conclusion.html" />
+    <link rel="prev" title="Chapter 15: Analogue Modulation" href="chapter15.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -182,7 +180,7 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction: What is Electricity?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction: What is Electricity?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter1.html">Chapter 1: Ohm’s Law and Electric Circuits</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">Chapter 2: Kirchoff’s Laws and Circuit Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">Chapter 3: Capacitors and Inductors</a></li>
@@ -202,7 +200,7 @@
 <li class="toctree-l1"><a class="reference internal" href="chapter13.html">Chapter 13: The Transistor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter14.html">Chapter 14: Signal Processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter15.html">Chapter 15: Analogue Modulation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter16.html">Chapter 16: Digital Modulation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 16: Digital Modulation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conclusion.html">Conclusion: What is Electricity?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendix: A Brief Introduction to Control Systems</a></li>
 </ul>
@@ -276,7 +274,7 @@
       
       
       
-      <li><a href="https://github.com/lcoquus/personal-website/issues/new?title=Issue%20on%20page%20%2Fintroduction.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/lcoquus/personal-website/issues/new?title=Issue%20on%20page%20%2Fchapter16.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -306,7 +304,7 @@
       
       
       
-      <li><a href="_sources/introduction.md" target="_blank"
+      <li><a href="_sources/chapter16.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -377,9 +375,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -390,27 +386,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduction: What is Electricity?</h1>
+    <h1>Chapter 16: Digital Modulation</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-problem-with-definitions">The Problem with Definitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#four-keys-to-understanding-electricity">Four Keys to Understanding Electricity</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematics">1. Mathematics</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#abstraction">2. Abstraction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling">3. Modelling</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analogy">4. Analogy</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-read-this-book">How to Read This Book</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -420,50 +400,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction-what-is-electricity">
-<h1>Introduction: What is Electricity?<a class="headerlink" href="#introduction-what-is-electricity" title="Link to this heading">#</a></h1>
-<p>Saturday morning. I’m sitting opposite a friend at a trendy inner city cafe. A napkin littered with esoteric diagrams and equations lies in front of me. He’s almost finished his pancakes, but I’ve barely touched my hot breakfast. Is this the start of a revolutionary business enterpise? No. It’s my futile attempt to answer the question, <em>what is electricity?</em>. The issue is by no means my friend. He’s an intelligent university student majoring in biology. I’m in my final year of an electrical engineering degree, so in theory I understand what’s going on. In theory. The issue lies with electricity.</p>
-<section id="the-problem-with-definitions">
-<h2>The Problem with Definitions<a class="headerlink" href="#the-problem-with-definitions" title="Link to this heading">#</a></h2>
-<p><em>Electricity</em> is one of those generic words which is so vaguely and inconsistently defined as to be unhelpful in any discussions of the thing itself. Is it the movement of electrons through a conductor? Well, yes, but there’s more to it than that. Is it the same as lightning? Kind of, but not necessarily. What about electromagnetic radiation? Or static electricity? What are those, and how are they connected? These, and many more questions, quickly confuse and obfuscate any attempt to produce a concise definition. Therefore, my aim in this book is not so much to define what electricity is as <em>what it does</em>. What are the fundamental properties of electricity? How does it behave in different conditions? How can we use it effectively? By answering these queries, I hope that you will come to understand and appreciate electricity even more.</p>
-</section>
-<section id="four-keys-to-understanding-electricity">
-<h2>Four Keys to Understanding Electricity<a class="headerlink" href="#four-keys-to-understanding-electricity" title="Link to this heading">#</a></h2>
-<p>I believe that there are four essential concepts which need to hover in the back of your mind as we begin to investigate electricity:</p>
-<section id="mathematics">
-<h3>1. Mathematics<a class="headerlink" href="#mathematics" title="Link to this heading">#</a></h3>
-<p>Electricity is a physical phenomenon. But like most physical phenomena, the language of mathematics often provides the most accurate translation of its behaviour. I’m aware that many people have mixed feelings about mathematics. This is why popular explanations of electricity tend to shy away from the robust descriptions which it offers. However, they suffer from a lack of depth which can be frustrating for those who wish to dig deeper. The only alternative appears to be undergraduate textbooks, an expensive and unengaging solution. This book aims to straddle a <em>via media</em>, a middle way. Since I do not think electricity can be explained sufficiently without the use of mathematics, I will include equations in every chapter. But I will try not to leave you scratching your head too much (a little head scratching is good for you though). Therefore, I will assume roughly a high school level of mathematics education. This includes trigonometry, basic algebra, and the fundamentals of calculus. For example, the following equations will hopefully look familiar:</p>
-<div class="math notranslate nohighlight">
-\[ \sin^2{x}+\cos^2{x}=1 \]</div>
-<div class="math notranslate nohighlight">
-\[ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} \]</div>
-<div class="math notranslate nohighlight">
-\[ \int \frac{1}{x} \ dx = \ln{|x|}+C \]</div>
-<p>If they don’t, I would recommend brushing up on your knowledge of these topics before proceeding. They represent the foundation upon which our exploration will rest.</p>
-</section>
-<section id="abstraction">
-<h3>2. Abstraction<a class="headerlink" href="#abstraction" title="Link to this heading">#</a></h3>
-<p>Electricity is difficult to explain succinctly. One of the reasons for this is that electricity has many properties, which manifest themselves very differently in different situations. The way we understand electricity in an electric circuit, at face value, bears little resemblance to lightning. It’s impossible for the human mind to retain a conscious awareness of every aspect of electricity at once. So we employ the principle of abstraction. Abstraction allows us to focus on the specific aspect of electricity which is relevant to our problem. We know that electricity is more than this, but we don’t need to think about anything else.</p>
-<p>Let me illustrate with the example of a banquet. If you were to host a banquet, you would have a lot to think about. However, the principle of abstraction might make your life a little easier. One issue to address is ingredients. You need to write a very long shopping list and send somebody to buy all these ingredients. But did you notice that you’ve already applied abstraction? You didn’t consider how to farm the ingredients or transport them to the supermarket. Instead, you treated them as items which existed in the supermarket for you to purchase. Let’s continue planning the banquet. Now you need to decide what to serve for each course. You look through a recipe book and choose the meals which suit the occasion. You’ve applied abstraction for a second time. You treat each meal as an item to be arranged in the banquet. You know that meals are made up of ingredients, but when you’re planning each course of the banquet you don’t need to be conscious of this. Finally, you need to figure out when each course will be served. You write a schedule to ensure that the guests will be well fed for the entire evening. Once again, abstraction comes to your aid. You can temporarily forget that courses are made up of meals and meals are made up of ingredients and ingredients need to be farmed. Each course is a black box to be placed somewhere on your schedule.</p>
-<p>This culinary thought experiment demonstrates how we should approach electricity. Understanding electricity involves electrons and fields and waves and strange pictures. But we cannot comprehend all these things simultaneously. Nor do we need to. We can use abstraction to concentrate our efforts on one idea at a time.</p>
-</section>
-<section id="modelling">
-<h3>3. Modelling<a class="headerlink" href="#modelling" title="Link to this heading">#</a></h3>
-<p>You are familiar with the concept of modelling, even if you don’t realise it. A diorama of a new skyscraper and the stage of a theatre production are both models. But a set of mathematical equations can also be a model. What these three things have in common is that <em>they accurately describe one aspect of something and disregard other aspects</em>. The diorama shows what the building will look like, but not how big it is, or what is inside it. The stage shows what a location looks like, but not what materials are used in its construction, or what it smells like to be there. In the same way, a set of equations can describe one aspect of electricity and disregard others. For example, Ohm’s law, which we will learn about in Chapter 1, accurately describes the relationship between voltage, current, and resistance in an electric circuit. It tells you nothing about electromagnetic radiation or the signal to noise ratio. But that does not diminish its usefulness. We will encounter many equations and other models in our study of electricity. None of them will be perfect because each of them will neglect something about electricity. But that does not make them any less useful.</p>
-</section>
-<section id="analogy">
-<h3>4. Analogy<a class="headerlink" href="#analogy" title="Link to this heading">#</a></h3>
-<p>The final concept to keep in mind throughout this book is analogy. An analogy seeks to explain something by comparing it to something else. This is especially helpful in studying electricity because electricity is usually invisible, and invisible things are difficult to visualise. Like models, analogies are imperfect representations of their subject. However, they differ from models in that they emphasise concepts, rather than properties.</p>
-<p>A common analogy used in explanations about electric circuits is known as the water analogy. I will outline it more thoroughly in the next chapter, but in brief, it compares electricity in a circuit to the flow of water through pipes, connecting voltage, current, and resistance to the behaviour of the water and the characteristics of the pipes. There are no scale models or lengthy equations in the analogy, simply a picture to imagine which assists in understanding the reality. Analogies on their own are insufficient, since they lack the rigour of a good mathematical model. Nevertheless, at times when our minds struggle to comprehend, a good analogy can save us.</p>
-</section>
-</section>
-<section id="how-to-read-this-book">
-<h2>How to Read This Book<a class="headerlink" href="#how-to-read-this-book" title="Link to this heading">#</a></h2>
-<p>I have structured this book to approximate the progression of a typical electrical engineering degree. We will begin with simple electric circuits, since they are both the easiest to understand and the most fundamental in understanding electricity as a whole. From there, we will delve into some of the underlying physics which enables electric circuits to function, culminating in Maxwell’s equations of electromagnetism. Having considered the theory behind electricity, we will then turn to some typical applications, in two broad categories: using electricity to carry energy, and using electricity to transmit information.</p>
-<p>There are two particular features of each chapter which I will point out before we begin. The first is the <em>In Real Life</em> section. One frustration of learning about electricity in depth is that it can feel far removed from the ways in which we experience elecricity on a daily basis. This section will consider a real-world example relevant to the content of the chapter. I want you to feel the satisfaction of realising that you now know a bit more about how things work.</p>
-<p>The second feature is the <em>Mathematics Corner</em>. While I provided the mathematical assumed knowledge earlier in this introduction, I also want to cater to those who have a more thorough mathematical background. I find the mathematics involved in electrical engineering to be clever and beautiful, albeit unfamiliar and challenging when you first encounter it. So, if you are comfortable with university-level mathematics, particularly linear algebra, complex analysis, and vector calculus, please enjoy these additions for enhancing your understanding. If you have no knowledge of these topics, you are also more than welcome, but do not fear, I have designed the <em>Mathematics Corner</em> to be skippable without any serious loss to the flow of the book.</p>
-<p>With the preliminaries now out of the way, let us dive in to the essentials of an electric circuit.</p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-16-digital-modulation">
+<h1>Chapter 16: Digital Modulation<a class="headerlink" href="#chapter-16-digital-modulation" title="Link to this heading">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">
@@ -497,20 +435,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="welcome.html"
+       href="chapter15.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome</p>
+        <p class="prev-next-title">Chapter 15: Analogue Modulation</p>
       </div>
     </a>
     <a class="right-next"
-       href="chapter1.html"
+       href="conclusion.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Chapter 1: Ohm’s Law and Electric Circuits</p>
+        <p class="prev-next-title">Conclusion: What is Electricity?</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -520,29 +458,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-problem-with-definitions">The Problem with Definitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#four-keys-to-understanding-electricity">Four Keys to Understanding Electricity</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematics">1. Mathematics</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#abstraction">2. Abstraction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling">3. Modelling</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analogy">4. Analogy</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-read-this-book">How to Read This Book</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
