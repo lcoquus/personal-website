@@ -424,18 +424,22 @@ document.write(`
 <h2>Three Quantities<a class="headerlink" href="#three-quantities" title="Link to this heading">#</a></h2>
 <p>Voltage. Current. Resistance. These three quantities will provide the foundation for our study of electricity, particularly electric circuits. Here I will outline their definitions and the equation which holds them together. In the next sections, we will develop an analogy to build our conceptual understanding, and apply this understanding to build an actual circuit. We need very briefly to dip our toes into the physics underlying electric circuits before we can arrive at the definitions. Chapter 6 will provide a more thorough treatment of this topic, but for now we will focus on the essentials.</p>
 <p>The function of an electric circuit rests on a property of matter known as electric charge (often shortened to just “charge”). Physicists denote charge with a lowercase <span class="math notranslate nohighlight">\(q\)</span>, and it is measured with a unit called the Coulomb (<span class="math notranslate nohighlight">\(C\)</span>).  We can consider charge to be similar to mass, in that a particle has a certain “amount” of charge, just as an object has a certain “amount” of mass. The only difference is that while mass can only be positive (something can’t weigh <span class="math notranslate nohighlight">\(-1\)</span> kilograms), charge can be either positive or negative. Electrons, the subatomic particle of greatest relevance to us, have a charge of approximately <span class="math notranslate nohighlight">\(-1.602\times10^{-19} \ C\)</span>.</p>
-<p>The reason we are concerned with electrons is that in certain situations electrons, and hence electric charge, can move. This brings us to our first definition. <em>Current</em>, notated with the letter <span class="math notranslate nohighlight">\(i\)</span> (either uppercase or lowercase) is the rate of change of electric charge. In mathematical form,
-$<span class="math notranslate nohighlight">\(i=\frac{dq}{dt}.\)</span><span class="math notranslate nohighlight">\(
-Current is measured in Amperes (\)</span>A$, sometimes shortened to “amps”), where one amp is equal to one Coulomb of electric charge moving past a given point in one second.</p>
-<p>How can we make charge move? Moving electric charge from point A to point B requires energy (notated <span class="math notranslate nohighlight">\(w\)</span>), which leads to our second definition. The <em>voltage</em> between two points, notated with the letter <span class="math notranslate nohighlight">\(v\)</span> (either uppercase or lowercase), is the amount of energy required to move electric charge from point A to point B. In mathematical form,
-$<span class="math notranslate nohighlight">\(v=\frac{dw}{dq}.\)</span><span class="math notranslate nohighlight">\(
-Current is measured in Volts (\)</span>V$, not to be confused with voltage itself), where one Volt is equal to one Joule of energy being used to move one Coulomb of electric charge.</p>
+<p>The reason we are concerned with electrons is that in certain situations electrons, and hence electric charge, can move. This brings us to our first definition. <em>Current</em>, notated with the letter <span class="math notranslate nohighlight">\(i\)</span> (either uppercase or lowercase) is the rate of change of electric charge. In mathematical form,</p>
+<div class="math notranslate nohighlight">
+\[i=\frac{dq}{dt}.\]</div>
+<p>Current is measured in Amperes (<span class="math notranslate nohighlight">\(A\)</span>, sometimes shortened to “amps”), where one amp is equal to one Coulomb of electric charge moving past a given point in one second.</p>
+<p>How can we make charge move? Moving electric charge from point A to point B requires energy (notated <span class="math notranslate nohighlight">\(w\)</span>), which leads to our second definition. The <em>voltage</em> between two points, notated with the letter <span class="math notranslate nohighlight">\(v\)</span> (either uppercase or lowercase), is the amount of energy required to move electric charge from point A to point B. In mathematical form,</p>
+<div class="math notranslate nohighlight">
+\[v=\frac{dw}{dq}.\]</div>
+<p>Current is measured in Volts (<span class="math notranslate nohighlight">\(V\)</span>, not to be confused with voltage itself), where one Volt is equal to one Joule of energy being used to move one Coulomb of electric charge.</p>
 <p>An important idea to highlight in this definition is that voltage is relative, that is, we can only measure the voltage <em>between two points</em>. It is conventional to draw a plus sign at one point and a minus sign at the other point. These points are chosen such that the voltage of the “plus side point” relative to the “minus sign point” is positive, known as <em>positive polarity</em>.</p>
-<p>What impacts the movement of electric charge and the amount of energy available to move it? This is our final quantity. <em>Resistance</em>, notated with an uppercase <span class="math notranslate nohighlight">\(R\)</span>, is a material’s tendency to resist the movement of electric charge. Resistance is a property of materials, not particles, more analogous to density than mass. Various physical factors such as length and cross-sectional area impact the resistance of a material, but we won’t adddress those here. Resistance is measured in Ohms. (The symbol for Ohms is the uppercase Greek letter omega, <span class="math notranslate nohighlight">\(\Omega\)</span>, since an English uppercase <span class="math notranslate nohighlight">\(O\)</span> looks too much like the digit zero. This is the first of many Greek letters we will use in our journey.) One Ohm is equal to a resistance of one Volt for every one amp of current. In fact, this describes the equation which is the title of this book, known as Ohm’s Law:
-$<span class="math notranslate nohighlight">\(v=iR.\)</span><span class="math notranslate nohighlight">\(
-Making resistance the subject of the equation gives
-\)</span><span class="math notranslate nohighlight">\(R=\frac{v}{i}.\)</span>$
-So if we know how much current is flowing between two points, and the value of the voltage between them, we can compute the resistance present between those two points.</p>
+<p>What impacts the movement of electric charge and the amount of energy available to move it? This is our final quantity. <em>Resistance</em>, notated with an uppercase <span class="math notranslate nohighlight">\(R\)</span>, is a material’s tendency to resist the movement of electric charge. Resistance is a property of materials, not particles, more analogous to density than mass. Various physical factors such as length and cross-sectional area impact the resistance of a material, but we won’t adddress those here. Resistance is measured in Ohms. (The symbol for Ohms is the uppercase Greek letter omega, <span class="math notranslate nohighlight">\(\Omega\)</span>, since an English uppercase <span class="math notranslate nohighlight">\(O\)</span> looks too much like the digit zero. This is the first of many Greek letters we will use in our journey.) One Ohm is equal to a resistance of one Volt for every one amp of current. In fact, this describes the equation which is the title of this book, known as Ohm’s Law:</p>
+<div class="math notranslate nohighlight">
+\[v=iR.\]</div>
+<p>Making resistance the subject of the equation gives</p>
+<div class="math notranslate nohighlight">
+\[R=\frac{v}{i}.\]</div>
+<p>So if we know how much current is flowing between two points, and the value of the voltage between them, we can compute the resistance present between those two points.</p>
 </section>
 <section id="the-water-analogy">
 <h2>The Water Analogy<a class="headerlink" href="#the-water-analogy" title="Link to this heading">#</a></h2>
@@ -443,11 +447,13 @@ So if we know how much current is flowing between two points, and the value of t
 </section>
 <section id="power-and-energy">
 <h2>Power and Energy<a class="headerlink" href="#power-and-energy" title="Link to this heading">#</a></h2>
-<p>There is one more quantity which we need to know before we can start building our circuit. In general, physicists define <em>power</em>, notated with an uppercase <span class="math notranslate nohighlight">\(P\)</span>, as the rate of change of energy. As an equation,
-$<span class="math notranslate nohighlight">\(P=\frac{dw}{dt}.\)</span><span class="math notranslate nohighlight">\(
-Power is measured in Watts (\)</span>W<span class="math notranslate nohighlight">\(), where one Watt is equal to one Joule of energy being used per second. However, we want to know specifically about electrical power. We can find this out if we multiply together our voltage and current quantities:
-\)</span><span class="math notranslate nohighlight">\(vi=\frac{dw}{dq}\times\frac{dw}{dt}=\frac{dw}{dt}=P.\)</span>$
-So electrical power is equal to the product of voltage and current.</p>
+<p>There is one more quantity which we need to know before we can start building our circuit. In general, physicists define <em>power</em>, notated with an uppercase <span class="math notranslate nohighlight">\(P\)</span>, as the rate of change of energy. As an equation,</p>
+<div class="math notranslate nohighlight">
+\[P=\frac{dw}{dt}.\]</div>
+<p>Power is measured in Watts (<span class="math notranslate nohighlight">\(W\)</span>), where one Watt is equal to one Joule of energy being used per second. However, we want to know specifically about electrical power. We can find this out if we multiply together our voltage and current quantities:</p>
+<div class="math notranslate nohighlight">
+\[vi=\frac{dw}{dq}\times\frac{dw}{dt}=\frac{dw}{dt}=P.\]</div>
+<p>So electrical power is equal to the product of voltage and current.</p>
 </section>
 <section id="building-a-circuit">
 <h2>Building a Circuit<a class="headerlink" href="#building-a-circuit" title="Link to this heading">#</a></h2>

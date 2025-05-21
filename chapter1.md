@@ -7,19 +7,27 @@ Voltage. Current. Resistance. These three quantities will provide the foundation
 The function of an electric circuit rests on a property of matter known as electric charge (often shortened to just "charge"). Physicists denote charge with a lowercase $q$, and it is measured with a unit called the Coulomb ($C$).  We can consider charge to be similar to mass, in that a particle has a certain "amount" of charge, just as an object has a certain "amount" of mass. The only difference is that while mass can only be positive (something can't weigh $-1$ kilograms), charge can be either positive or negative. Electrons, the subatomic particle of greatest relevance to us, have a charge of approximately $-1.602\times10^{-19} \ C$.
 
 The reason we are concerned with electrons is that in certain situations electrons, and hence electric charge, can move. This brings us to our first definition. *Current*, notated with the letter $i$ (either uppercase or lowercase) is the rate of change of electric charge. In mathematical form,
+
 $$i=\frac{dq}{dt}.$$
+
 Current is measured in Amperes ($A$, sometimes shortened to "amps"), where one amp is equal to one Coulomb of electric charge moving past a given point in one second.
 
 How can we make charge move? Moving electric charge from point A to point B requires energy (notated $w$), which leads to our second definition. The *voltage* between two points, notated with the letter $v$ (either uppercase or lowercase), is the amount of energy required to move electric charge from point A to point B. In mathematical form,
+
 $$v=\frac{dw}{dq}.$$
+
 Current is measured in Volts ($V$, not to be confused with voltage itself), where one Volt is equal to one Joule of energy being used to move one Coulomb of electric charge.
 
 An important idea to highlight in this definition is that voltage is relative, that is, we can only measure the voltage *between two points*. It is conventional to draw a plus sign at one point and a minus sign at the other point. These points are chosen such that the voltage of the "plus side point" relative to the "minus sign point" is positive, known as *positive polarity*.    
 
 What impacts the movement of electric charge and the amount of energy available to move it? This is our final quantity. *Resistance*, notated with an uppercase $R$, is a material's tendency to resist the movement of electric charge. Resistance is a property of materials, not particles, more analogous to density than mass. Various physical factors such as length and cross-sectional area impact the resistance of a material, but we won't adddress those here. Resistance is measured in Ohms. (The symbol for Ohms is the uppercase Greek letter omega, $\Omega$, since an English uppercase $O$ looks too much like the digit zero. This is the first of many Greek letters we will use in our journey.) One Ohm is equal to a resistance of one Volt for every one amp of current. In fact, this describes the equation which is the title of this book, known as Ohm's Law:
+
 $$v=iR.$$
+
 Making resistance the subject of the equation gives
+
 $$R=\frac{v}{i}.$$
+
 So if we know how much current is flowing between two points, and the value of the voltage between them, we can compute the resistance present between those two points.
 
 ## The Water Analogy
@@ -29,9 +37,13 @@ Analysing electric circuits requires a good intuitive understanding of what is h
 ## Power and Energy
 
 There is one more quantity which we need to know before we can start building our circuit. In general, physicists define *power*, notated with an uppercase $P$, as the rate of change of energy. As an equation,
+
 $$P=\frac{dw}{dt}.$$
+
 Power is measured in Watts ($W$), where one Watt is equal to one Joule of energy being used per second. However, we want to know specifically about electrical power. We can find this out if we multiply together our voltage and current quantities:
+
 $$vi=\frac{dw}{dq}\times\frac{dw}{dt}=\frac{dw}{dt}=P.$$
+
 So electrical power is equal to the product of voltage and current.
 
 ## Building a Circuit
