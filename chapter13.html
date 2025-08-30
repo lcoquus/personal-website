@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -201,6 +201,12 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 13: The Transistor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter14.html">Chapter 14: Signal Processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter15.html">Chapter 15: Analogue Modulation</a></li>
+
+
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="chapter16.html">Chapter 16: Digital Modulation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conclusion.html">Conclusion: What is Electricity?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendix: A Brief Introduction to Control Systems</a></li>
@@ -376,7 +382,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -392,6 +400,20 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#semiconductors">Semiconductors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-bjt">The BJT</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-mosfet">The MOSFET</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amplifiers-and-switches">Amplifiers and Switches</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-real-life-a-simple-adder">In Real Life: A Simple Adder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematics-corner">Mathematics Corner:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-ve-learnt">What We’ve Learnt</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -403,6 +425,27 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="chapter-13-the-transistor">
 <h1>Chapter 13: The Transistor<a class="headerlink" href="#chapter-13-the-transistor" title="Link to this heading">#</a></h1>
+<section id="semiconductors">
+<h2>Semiconductors<a class="headerlink" href="#semiconductors" title="Link to this heading">#</a></h2>
+</section>
+<section id="the-bjt">
+<h2>The BJT<a class="headerlink" href="#the-bjt" title="Link to this heading">#</a></h2>
+</section>
+<section id="the-mosfet">
+<h2>The MOSFET<a class="headerlink" href="#the-mosfet" title="Link to this heading">#</a></h2>
+</section>
+<section id="amplifiers-and-switches">
+<h2>Amplifiers and Switches<a class="headerlink" href="#amplifiers-and-switches" title="Link to this heading">#</a></h2>
+</section>
+<section id="in-real-life-a-simple-adder">
+<h2>In Real Life: A Simple Adder<a class="headerlink" href="#in-real-life-a-simple-adder" title="Link to this heading">#</a></h2>
+</section>
+<section id="mathematics-corner">
+<h2>Mathematics Corner:<a class="headerlink" href="#mathematics-corner" title="Link to this heading">#</a></h2>
+</section>
+<section id="what-we-ve-learnt">
+<h2>What We’ve Learnt<a class="headerlink" href="#what-we-ve-learnt" title="Link to this heading">#</a></h2>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -459,6 +502,27 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#semiconductors">Semiconductors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-bjt">The BJT</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-mosfet">The MOSFET</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amplifiers-and-switches">Amplifiers and Switches</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-real-life-a-simple-adder">In Real Life: A Simple Adder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematics-corner">Mathematics Corner:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-ve-learnt">What We’ve Learnt</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

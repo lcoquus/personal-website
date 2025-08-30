@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -201,6 +201,12 @@
 <li class="toctree-l1"><a class="reference internal" href="chapter13.html">Chapter 13: The Transistor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter14.html">Chapter 14: Signal Processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter15.html">Chapter 15: Analogue Modulation</a></li>
+
+
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="chapter16.html">Chapter 16: Digital Modulation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conclusion.html">Conclusion: What is Electricity?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendix: A Brief Introduction to Control Systems</a></li>
@@ -376,7 +382,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -392,6 +400,19 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-power-triangle">The Power Triangle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#three-phase-power">Three-Phase Power</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-transformer">The Transformer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-real-life-a-substation">In Real Life: A Substation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematics-corner-why-three-phases">Mathematics Corner: Why Three Phases?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-ve-learnt">What We’ve Learnt</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -403,6 +424,24 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="chapter-9-electric-power-in-detail">
 <h1>Chapter 9: Electric Power In Detail<a class="headerlink" href="#chapter-9-electric-power-in-detail" title="Link to this heading">#</a></h1>
+<section id="the-power-triangle">
+<h2>The Power Triangle<a class="headerlink" href="#the-power-triangle" title="Link to this heading">#</a></h2>
+</section>
+<section id="three-phase-power">
+<h2>Three-Phase Power<a class="headerlink" href="#three-phase-power" title="Link to this heading">#</a></h2>
+</section>
+<section id="the-transformer">
+<h2>The Transformer<a class="headerlink" href="#the-transformer" title="Link to this heading">#</a></h2>
+</section>
+<section id="in-real-life-a-substation">
+<h2>In Real Life: A Substation<a class="headerlink" href="#in-real-life-a-substation" title="Link to this heading">#</a></h2>
+</section>
+<section id="mathematics-corner-why-three-phases">
+<h2>Mathematics Corner: Why Three Phases?<a class="headerlink" href="#mathematics-corner-why-three-phases" title="Link to this heading">#</a></h2>
+</section>
+<section id="what-we-ve-learnt">
+<h2>What We’ve Learnt<a class="headerlink" href="#what-we-ve-learnt" title="Link to this heading">#</a></h2>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -459,6 +498,26 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-power-triangle">The Power Triangle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#three-phase-power">Three-Phase Power</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-transformer">The Transformer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-real-life-a-substation">In Real Life: A Substation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematics-corner-why-three-phases">Mathematics Corner: Why Three Phases?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-ve-learnt">What We’ve Learnt</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -200,6 +200,12 @@
 <li class="toctree-l1"><a class="reference internal" href="chapter13.html">Chapter 13: The Transistor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter14.html">Chapter 14: Signal Processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter15.html">Chapter 15: Analogue Modulation</a></li>
+
+
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="chapter16.html">Chapter 16: Digital Modulation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conclusion.html">Conclusion: What is Electricity?</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Appendix: A Brief Introduction to Control Systems</a></li>
@@ -375,7 +381,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -391,6 +399,20 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-control-system">What is a Control System?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-laplace-transform">The Laplace Transform</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-alternative-perspective-on-a-dc-motor">An Alternative Perspective on a DC Motor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-pid-controller">The PID Controller</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-state-space-approach">The State-Space Approach</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#state-feedback-control">State Feedback Control</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#topics-for-further-learning">Topics for Further Learning</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -402,6 +424,28 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="appendix-a-brief-introduction-to-control-systems">
 <h1>Appendix: A Brief Introduction to Control Systems<a class="headerlink" href="#appendix-a-brief-introduction-to-control-systems" title="Link to this heading">#</a></h1>
+<p><em>explain why this is in an appendix</em></p>
+<section id="what-is-a-control-system">
+<h2>What is a Control System?<a class="headerlink" href="#what-is-a-control-system" title="Link to this heading">#</a></h2>
+</section>
+<section id="the-laplace-transform">
+<h2>The Laplace Transform<a class="headerlink" href="#the-laplace-transform" title="Link to this heading">#</a></h2>
+</section>
+<section id="an-alternative-perspective-on-a-dc-motor">
+<h2>An Alternative Perspective on a DC Motor<a class="headerlink" href="#an-alternative-perspective-on-a-dc-motor" title="Link to this heading">#</a></h2>
+</section>
+<section id="the-pid-controller">
+<h2>The PID Controller<a class="headerlink" href="#the-pid-controller" title="Link to this heading">#</a></h2>
+</section>
+<section id="the-state-space-approach">
+<h2>The State-Space Approach<a class="headerlink" href="#the-state-space-approach" title="Link to this heading">#</a></h2>
+</section>
+<section id="state-feedback-control">
+<h2>State Feedback Control<a class="headerlink" href="#state-feedback-control" title="Link to this heading">#</a></h2>
+</section>
+<section id="topics-for-further-learning">
+<h2>Topics for Further Learning<a class="headerlink" href="#topics-for-further-learning" title="Link to this heading">#</a></h2>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -449,6 +493,27 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-control-system">What is a Control System?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-laplace-transform">The Laplace Transform</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-alternative-perspective-on-a-dc-motor">An Alternative Perspective on a DC Motor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-pid-controller">The PID Controller</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-state-space-approach">The State-Space Approach</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#state-feedback-control">State Feedback Control</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#topics-for-further-learning">Topics for Further Learning</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
