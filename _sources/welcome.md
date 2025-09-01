@@ -2,7 +2,7 @@
 
 ## What Is This?
 
-This is the work-in-progress website for my book project, entitled *V Equals I R: A Tour Guide of Electricity*. I will periodically update this website with new chapters of the book, with the hope of eventually publishing it as a hardcopy. For now, I hope that the content on this website will help you to learn more about electricity. 
+This is the preview website for my book project, entitled *V Equals I R: A Tour Guide of Electricity*. It contains the introduction, first chapter, and outline for the remainder of the book. While the book is still a work-in-progress, I hope eventually to get it published. 
 
 ## Who Is It For?
 

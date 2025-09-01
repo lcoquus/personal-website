@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -460,12 +460,12 @@ document.write(`
 <h2>Building a Circuit<a class="headerlink" href="#building-a-circuit" title="Link to this heading">#</a></h2>
 <p>Okay. Let’s build our first electric circuit. To start, we need a <em>path</em> through which electric charge can move. A material which makes a good path is called a conductor. We will use copper wire, drawn as a straight line in our circuit diagram. Next, we need a <em>source</em> of energy to move the electric charge, known as an <em>active element</em>. This could be something like a battery or a generator or a solar panel. We will draw the generic symbol commonly used for an energy source in circuit diagrams. Finally, we need something to receive the power resulting from the voltage and current. This is called a <em>load</em> or a <em>passive element</em>. A load can be just about anything, from a light bulb to an entire house. The best way of modelling a load will depend on what the load is, but a simple load can be modelled as a resistance. We use a zigzag to show resistance on our circuit diagram.</p>
 <p>There are two questions we must answer before we can finish our diagram. Firstly, in which direction is the flow of current? Since the source is supplying energy and the load is consuming energy, it is conventional to draw current flowing <em>out of</em> the source and <em>into</em> the load. This aligns with the passive sign convention, since the current flowing out of the source is in the opposite direction to the current flowing into the load.</p>
-<p>Secondly, how do we measure voltage in our circuit? Remember that voltage must be measured between two points. In order to maintain consistency in our voltage measurements, it is helpful to choose a common reference point in our circuit, and always to measure voltages relative to that point. This common reference point is called the <em>ground</em> of the circuit. Whether or not it is literally the ground is irrelevant. We will choose the ground to be the bottom wire of our circuit, and represent this with a dashed triangle. Since we will measure all our voltages relative to the ground, we will give the ground a minus sign. Figure X shows our completed circuit diagram with the voltage, current, and resistances labelled.</p>
+<p>Secondly, how do we measure voltage in our circuit? Remember that voltage must be measured between two points. In order to maintain consistency in our voltage measurements, it is helpful to choose a common reference point in our circuit, and always to measure voltages relative to that point. This common reference point is called the <em>ground</em> of the circuit. Whether or not it is literally the ground is irrelevant. We will choose the ground to be the bottom wire of our circuit, and represent this with a dashed triangle. Since we will measure all our voltages relative to the ground, we will give the ground a minus sign. The figure below shows our completed circuit diagram with the voltage, current, and resistances labelled.</p>
 <p><img alt="A Simple Electric Circuit" src="_images/ch1-1.png" /></p>
 </section>
 <section id="in-real-life-a-torch">
 <h2>In Real Life: A Torch<a class="headerlink" href="#in-real-life-a-torch" title="Link to this heading">#</a></h2>
-<p>Electric circuits can often feel very abstract and unrelated to any physical objects. However, even our simple circuit in Figure X can provide a helpful description of an everyday item: a handheld torch. A torch is powered by a battery, which is a source. The lightbulb consumes power, so it is a load. A copper wire connects the two. We can even assign some typical values to our circuit quantities. A double-A battery is around 1.5 V. A medium sized torch might consume 1.5 W of power.
+<p>Electric circuits can often feel very abstract and unrelated to any physical objects. However, even our simple circuit above can provide a helpful description of an everyday item: a handheld torch. A torch is powered by a battery, which is a source. The lightbulb consumes power, so it is a load. A copper wire connects the two. We can even assign some typical values to our circuit quantities. A double-A battery is around 1.5 V. A medium sized torch might consume 1.5 W of power.
 Rearranging our power equation</p>
 <div class="math notranslate nohighlight">
 \[P=vi\implies i=\frac{P}{v}=\frac{1.5}{1.5}=1 \ A.\]</div>
@@ -473,6 +473,7 @@ Rearranging our power equation</p>
 <div class="math notranslate nohighlight">
 \[R = \frac{v}{i}=\frac{1.5}{1}=1.5 \ \Omega.\]</div>
 <p>Our circuit diagram of lines and zigzags now takes on a greater meaning: it is an electrical model of a torch. In fact, most household devices which consume power can, at a basic level, be modelled with this same circuit.</p>
+<p><img alt="An Electrical Model of a Torch" src="_images/ch1-2.png" /></p>
 </section>
 <section id="mathematics-corner-ohm-s-law-in-depth">
 <h2>Mathematics Corner: Ohm’s Law in Depth<a class="headerlink" href="#mathematics-corner-ohm-s-law-in-depth" title="Link to this heading">#</a></h2>
